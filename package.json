@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "axios": "^1.7.2",
-    "jwt-decode": "^4.0.0",
-    "react-bootstrap": "^2.10.3",
-    "redux": "^5.0.1",
-    "simple-line-icons": "^2.5.5"
-  }
-}
