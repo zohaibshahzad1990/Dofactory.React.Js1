@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams,useLocation } from 'react-router-dom';
 import { get, deleteData } from "/src/utils/clients/AppClient";
 
 import { formatCurrency, formatDate } from "/src/utils/helpers/formatting";
@@ -23,6 +23,7 @@ export const List = () => {
     console.log("init opportunities")
 
     const navigate = useNavigate();
+    const location = useLocation();
     const [searchParams, setSearchParams] = useSearchParams();
 
 
@@ -94,13 +95,18 @@ export const List = () => {
         });
         setState((prevState) => ({
             ...prevState,
+            page: pageValue,
+            pageSize: pageSizeValue,
+            sort: sortValue,
+            advancedFilter: advancedFilterValue,
+            filter: filterValue,
             filters: filters,
             stages: stages
         }));
 
         console.log('effect: once')
 
-    }, []);
+    }, [location]);
 
     useEffect(() => { // Runs when page, sort, or filter changes
 
