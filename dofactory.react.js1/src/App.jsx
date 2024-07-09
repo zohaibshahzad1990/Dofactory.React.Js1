@@ -1,7 +1,8 @@
 
-import React, { Suspense } from "react";
+import React, { Suspense,useEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RequireAuth from './utils/auth/RequireAuth';
+import axios  from "axios";
 
 const Layout = React.lazy(() => import("./components/Layout"));
 
@@ -17,7 +18,12 @@ const loading = (
 );
 
 const App = () => {
-
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+        }
+    }, []);
     return (
 
         <BrowserRouter>
