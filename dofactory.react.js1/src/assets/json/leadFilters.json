@@ -1,0 +1,26 @@
+[
+    {
+        "value": 0,
+        "text": "All Leads"
+    },
+    {
+        "value": 1,
+        "text": "Recently Viewed"
+    },
+     {
+        "value": 2,
+        "text": "All Open Leads"
+    },
+     {
+        "value": 3,
+        "text": "All My Leads"
+    },
+     {
+        "value": 4,
+        "text": "All My Open Leads"
+    },
+     {
+        "value": 5,
+        "text": "All My Hot Leads"
+    }
+]

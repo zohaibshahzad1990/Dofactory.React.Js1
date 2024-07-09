@@ -1,0 +1,38 @@
+[
+  {
+    "value": "",
+    "text": "-- None --"
+  },
+  {
+    "value": "Prospecting",
+    "text": "Prospecting"
+  },
+  {
+    "value": "Qualification",
+    "text": "Qualification"
+  },
+  {
+    "value": "Needs Analysis",
+    "text": "Needs Analysis"
+  },
+  {
+    "value": "Value Proposition",
+    "text": "Value Proposition"
+  },
+  {
+    "value": "Proposal/Price Quote",
+    "text": "Proposal/Price Quote"
+  },
+  {
+    "value": "Negotiation/Review",
+    "text": "Negotiation/Review"
+  },
+  {
+    "value": "Closed Won",
+    "text": "Closed Won"
+  },
+  {
+    "value": "Closed Lost",
+    "text": "Closed Lost"
+  }
+]

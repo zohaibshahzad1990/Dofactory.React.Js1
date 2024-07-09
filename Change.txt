@@ -1,0 +1,36 @@
+Provide new port number in launch.json (2x) and in vite.config.js.
+Add: 
+server: {
+        port: 5190,       // Assigned port number (default is 5173)
+        port: 5191, ???       // Assigned port number (default is 5173)
+        strictPort: true  // Because of CORS policy of the Server API
+    },
+
+created a new file: jsconfig.json to easier include imports.
+
+Overall, this jsconfig.json configuration helps your editor understand
+the structure of your React project, leading to a more efficient and 
+streamlined development experience.  NOT Currently used, I think.
+
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": [ "src" ]
+}
+
+Note that in main.jsx we have React.StrictMode.
+ <React.StrictMode>
+   <App />
+ </React.StrictMode>,
+
+By default, React enables "Strict Mode" during development. 
+This mode intentionally double-renders components to help catch potential 
+side effects and issues that might not be apparent in normal mode.
+
+If the double rendering only happens in development due to Strict Mode, 
+you can usually ignore it. The component should behave normally in production builds.
+If necessary you can remove the component before going to production.
+
+Also look at CORS settings in Server. Right now it accepts HTTP client.
+We should configure React to run over HTTPS.

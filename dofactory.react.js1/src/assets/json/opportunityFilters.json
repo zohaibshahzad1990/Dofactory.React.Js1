@@ -1,0 +1,26 @@
+[
+    {
+        "value": 0,
+        "text": "All Opportunities"
+    },
+    {
+        "value": 1,
+        "text": "Recently Viewed"
+    },
+     {
+        "value": 2,
+        "text": "All Open Opportunities"
+    },
+     {
+        "value": 3,
+        "text": "All My Opportunities"
+    },
+     {
+        "value": 4,
+        "text": "Private"
+    },
+     {
+        "value": 5,
+        "text": "Won"
+    }
+]

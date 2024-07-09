@@ -1,0 +1,26 @@
+[
+  {
+    "value": "",
+    "text": "-- None --"
+  },
+  {
+    "value": "Email",
+    "text": "Email"
+  },
+  {
+    "value": "Website",
+    "text": "Website"
+  },
+  {
+    "value": "Meeting",
+    "text": "Meeting"
+  },
+  {
+    "value": "Exhibit",
+    "text": "Exhibit"
+  },
+  {
+    "value": "Referral",
+    "text": "Referral"
+  }
+]
