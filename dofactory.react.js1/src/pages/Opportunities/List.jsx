@@ -627,7 +627,7 @@ export const List = () => {
 
                                     {state.opportunities.map((item) => (
                                         <tr key={item.id}>
-                                            <td><a className="table-list-link" href={"/opportunities/" + item.id}>{item.name}</a></td>
+                                            <td> <Link className="table-list-link" to={"/opportunities/" + item.id}>{item.name}</Link></td>
                                             <td>{item.accountName}</td>
                                             <td className="text-end pr-10 pr-sm-40">{formatCurrency(item.amount)}</td>
                                             <td className="">{formatDate(item.closeDate)}</td>
